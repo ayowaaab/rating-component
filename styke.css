@@ -25,8 +25,8 @@ main p{font-size: clamp(15px,1.1vw,20px);color: var(--Medium_Grey);}
     border: none;cursor: pointer;color: var(--Light_Grey);
     background-color: hsl(215, 11%, 21%);transition: .3s;
 }
-.all-btn button:hover{background-color: var(--Light_Grey);color: white;}
-.all-btn button:active{background-color: var(--Orange);color: white;}
+.all-btn button:hover{background-color: var(--Light_Grey)!important;color: white!important;}
+.all-btn button:active{background-color: var(--Orange)!important;color: white!important;}
 #submit{
     border-radius: 40px;border: none;background-color: var(--Orange);
     color: white;transition: .3s;cursor: pointer;
