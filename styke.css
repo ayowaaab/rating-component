@@ -1,0 +1,48 @@
+@import url('https://fonts.googleapis.com/css2?family=Overpass:wght@100;400;700&display=swap');
+*{padding: 0;margin: 0;box-sizing: border-box;font-family:Overpass,sans-serif;}
+
+:root{
+    --Orange: hsl(25, 97%, 53%);
+    --White: hsl(0, 0%, 100%);
+    --Light_Grey: hsl(217, 12%, 63%);
+    --Medium_Grey: hsl(216, 12%, 54%);
+    --Dark_Blue: hsl(213, 19%, 18%);
+    --Very_Dark_Blue: hsl(216, 12%, 8%);
+    
+    --btn_dimension : clamp(50px,5vw,70px);
+    --img_dim:clamp(150px,11vw,200px);
+}
+
+body{display: flex;height: 100vh;justify-content: center;align-items: center;background-color: var(--Very_Dark_Blue);}
+main{width: 30vw;height: 30vw;min-height: 400px;min-width: 400px;}
+main p{font-size: clamp(15px,1.1vw,20px);color: var(--Medium_Grey);}
+.state{display: grid;margin:0 auto;row-gap: 1rem;background-color: var(--Dark_Blue);color: white;padding: 2rem;height: 100%;border-radius: 40px;}
+.state img{background-color:hsl(215, 11%, 21%); ;padding: 1rem;border-radius: 50%;width: 60px;}
+.state h1{font-size: clamp(30px,2.7vw,50px);}
+.all-btn{display: flex;justify-content: space-around;}
+.all-btn button{
+    width: var(--btn_dimension);height: var(--btn_dimension);border-radius: 50%;font-size: 20px;
+    border: none;cursor: pointer;color: var(--Light_Grey);
+    background-color: hsl(215, 11%, 21%);transition: .3s;
+}
+.all-btn button:hover{background-color: var(--Light_Grey);color: white;}
+.all-btn button:active{background-color: var(--Orange);color: white;}
+#submit{
+    border-radius: 40px;border: none;background-color: var(--Orange);
+    color: white;transition: .3s;cursor: pointer;
+    padding: 1rem 0;
+    letter-spacing: 5px;font-size: clamp(15px,1.1vw,20px);
+}
+#submit:hover{border-radius: 40px;border: none;background-color: white;color: var(--Orange);}
+
+.thanks{text-align: center;display: none;}
+.thanks img{background-color: transparent;border-radius: 0;align-self: center;justify-self: center;width:calc(var(--img_dim)+(var(--img_dim)/2)) ;height:var(--img_dim);}
+.thanks h1{font-size: clamp(20px,2.1vw,40px);}
+.thanks h2{
+    background-color:hsla(216, 12%, 54%, 0.2);
+    border-radius: 30px;
+    font-weight: 400;
+    width: 60%;justify-self: center;align-self: center;
+    color: var(--Orange);font-size:clamp(15px,1.1vw,20px);
+    padding: .5rem 0;
+}
